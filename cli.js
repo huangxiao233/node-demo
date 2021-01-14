@@ -3,8 +3,6 @@ const api = require('./index.js')
 const program = new Command();
 program.version('0.0.1');
 
-// 通过绑定处理函数实现命令（这里的指令描述为放在`.command`中）
-// 返回新生成的命令（即该子命令）以供继续配置
 program
   .command('add <x> [y]')
   .description('add')
